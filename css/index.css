@@ -1,0 +1,764 @@
+
+/*  通用样式  */
+
+html {
+    color: #000;
+    background: #FFF;
+}
+
+html,body{
+    width: 100%;
+    height:100%;
+}
+
+body, a,div, ul, ol, li, h1, h2, h3, h4, h5, h6,form, input,  p {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+ol, ul {
+    list-style: none
+}
+
+.page {
+    width: 100%;
+    height: auto;
+}
+
+
+/*     头部样式     */
+
+.header{
+    width: 100%;
+    height: 48px;
+}
+
+.header .head-in{
+    width:1244px;
+    height:100%;
+    margin:0 auto;
+}
+
+.header .head-in .head-left{
+    float: left;
+    width: 435px;
+    height: 28px;  /* 因为这排中最高的图片高度为28px */
+    margin-top: 10px; /* 高度是48px,因此用margin-top居中*/
+}
+
+.header .head-in .head-left ul li{
+    float: left;
+    margin-right: 20px;
+}
+
+.header .head-in .head-left li a{
+    display: inline-block;  /*设置a标签的文字，给它设置高度以及行高等，需要改变其显示类型*/
+    line-height: 28px;
+    text-align:center;
+    font-size:14px;
+    color:#000000;
+    text-decoration: none;
+}
+
+.header .head-in .head-left li a:hover{
+    color: #c90000;
+}
+
+.header .head-in .head-left .head-pic a{
+    width: 80px;
+    height: 28px;
+    display: inline-block; /*设置a标签的文字，给它设置高度以及行高等，需要改变其显示类型*/
+    background: url("../images/huaban_logo.png") no-repeat;
+    background-size: cover;
+    line-height: 28px;
+    text-align: center;
+
+}
+
+.header .head-in .head-left li:nth-child(7) a{
+    font-size: 40px;
+    line-height: 6px;
+}
+
+.header .head-in .head-left .new{ /*span放在a标签内*/
+    width:30px;
+    height: 14px;
+    display: inline-block;
+    line-height: 14px;
+    background-color: #f4a523;
+    font-size:12px;
+    text-align: center;
+    margin-left:5px;
+    color: #ffffff;
+}
+
+.header .head-in .head-center{
+    width: 675px;
+    height: 34px;
+    float: left;
+    background-color: bisque;
+    margin-top: 7px;
+}
+
+.header .head-in .head-center #query{
+    height: 100%;
+    width:100%;
+    padding-left:10px;
+    outline: none;
+    border: 1px solid #c3c3c3;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.header .head-in .head-right{
+    height: 48px;
+    float: right;
+}
+
+.header .head-in .head-right a{ /*注册登录应为a标签，可以跳转*/
+    height:34px;
+    width:52px;
+    margin-top:7px;
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 34px;
+    text-align: center;
+}
+
+.header .head-in .head-right a:nth-child(1){
+    background: linear-gradient(#E53E49, #D43636);
+    border: 1px solid #c90000;
+    color:#fff;
+}
+
+.header .head-in .head-right a:nth-child(2){
+    color:#fff;
+    border: 1px solid #c3c3c3;
+    color:#000000;
+}
+/*     头部样式结束      */
+
+/*     滚动广告样式    */
+
+.ads{
+    width:100%;
+    height:60px;
+    background-color: bisque;
+}
+
+.ads ul{
+    width:100%;
+    height: 60px;
+    position: relative;
+}
+
+.ads ul li{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left: 0;
+    opacity: 1;
+}
+
+.ads ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.ads ul li:nth-child(1) a{
+    background: url("../images/top_banner01.jpg") center center;
+}
+
+.ads ul li:nth-child(2) a{
+    background: url("../images/top_banner02.jpg") center center;
+}
+
+.ads ul li:nth-child(3) a{
+    background: url("../images/top_banner03.jpg") center center;
+}
+
+.ads ul li:nth-child(4) a{
+    background: url("../images/top_banner04.jpg") center center;
+}
+
+.ads ul li:nth-child(5) a{
+     background: url("../images/top_banner05.jpg") center center;
+ }
+
+.ads ul li:nth-child(6) a{
+    background: url("../images/top_banner06.jpg") center center;
+}
+
+.ads ul li:nth-child(7) a{
+    background: url("../images/top_banner07.jpg") center center;
+}
+
+/*     滚动广告样式结束     */
+
+/*     吸顶效果样式     */
+.top-nav{
+    width: 100%;
+    height: 70px;
+    position:fixed;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+    display: none;
+    z-index:999;
+}
+
+.top-nav .top-nav-in{
+    width: 1244px;
+    height: 100%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.top-nav .top-nav-in  .top-nav-des{
+    padding-top:2px;
+}
+
+.top-nav .top-nav-in  .top-nav-des .title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.top-nav .top-nav-in .top-nav-login ul{
+     margin-top:15px;
+}
+
+.top-nav .top-nav-in .top-nav-login ul li{
+    display:inline-block;
+    width:42px;
+    height: 42px;
+    border-radius: 50%;
+    line-height: 42px;
+}
+
+.top-nav .top-nav-in .top-nav-login ul li:nth-child(1){
+    width: 140px;
+    font-size: 15px;
+}
+
+.top-nav .top-nav-in .top-nav-login li:nth-child(2) {
+    background: url(../images/icon2.png);
+    background-size: cover;
+}
+
+.top-nav .top-nav-in .top-nav-login li:nth-child(3) {
+    background: url(../images/icon2.png)  -42px 0;
+    background-size: cover;
+}
+
+.top-nav .top-nav-in .top-nav-login li:nth-child(4) {
+    background: url(../images/icon2.png)  -84px 0;
+    background-size: cover;
+}
+
+.top-nav .top-nav-in .top-nav-login li:nth-child(5) {
+    background: url(../images/icon2.png)  -126px 0;
+    background-size: cover;
+}
+/*     吸顶效果样式结束     */
+
+/*     快速登录样式     */
+.quick-login{
+    width: 100%;
+    height: 120px;
+    background: url("../images/login_header_blurbg.jpg") center center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.quick-login .quick-login-in{
+    width:1244px;
+    height: 100%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;   /*内容两侧对齐，中间留空*/
+}
+
+.quick-login .quick-login-in .intro{
+    display: flex;
+    flex-direction: column;    /*内容以列为主轴，往中间对齐*/
+    justify-content: center;
+}
+
+.quick-login .quick-login-in .intro .title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom:7px;
+}
+
+.quick-login .quick-login-in .login-icon{
+    display: flex;
+    flex-direction: column;  /*内容以列为主轴往中间对齐，侧轴往中间对齐*/
+    justify-content: center;
+    align-content: center;
+}
+.quick-login .quick-login-in .login-icon li:nth-child(1){
+    margin-left: 20px;
+}
+.quick-login .quick-login-in .login-icon li{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.quick-login .quick-login-in .login-icon li a{
+    display: inline-block;
+    width:54px;
+    height: 54px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.quick-login .quick-login-in .login-icon li:nth-child(1) a{
+    background: url("../images/icon.jpg") 0 0;
+}
+
+.quick-login .quick-login-in .login-icon li:nth-child(2) a{
+    background: url("../images/icon.jpg")  60px 0;
+}
+
+.quick-login .quick-login-in .login-icon li:nth-child(3) a{
+    background: url("../images/icon.jpg") 140px 0;
+}
+
+.quick-login .quick-login-in .login-icon li:nth-child(4) a{
+    background: url("../images/icon.jpg") 220px 0;
+}
+
+.quick-login .quick-login-in .login-icon .split-text
+{
+    position:relative;
+    width:300px;
+    text-align: center;
+}
+
+.quick-login .quick-login-in .login-icon .split-text .line-left{
+    position:absolute;
+    top:10px;
+    left:0;
+    display: inline-block;
+    width:40px;
+    border-top: 1px solid #ffffff;
+}
+
+.quick-login .quick-login-in .login-icon .split-text .line-right{
+    position:absolute;
+    top:10px;
+    right:0;
+    display: block;
+    width:40px;
+    border-top: 1px solid #ffffff;
+}
+
+/*     快速登录样式结束     */
+
+/*     类型标题样式     */
+
+.introduce{
+    width:100%;
+    height: 130px;
+}
+
+.introduce .introduce-in{
+    width:1244px;
+    height: 100%;
+    line-height: 130px;
+    margin:0 auto;
+    text-align:center;
+    font-size: 30px;
+}
+
+.introduce .introduce-in .line-left,.introduce .introduce-in .line-right{
+    display: inline-block;
+    width:48px;
+    border-top: 1px solid #000;
+    margin-bottom:10px;
+}
+
+/*     类型标题样式结束     */
+
+
+/*     tab选项卡样式     */
+.tab{
+    width:100%;
+}
+
+.tab .tab-head{
+    width:300px;
+    height:49px;
+    margin:0 auto;
+}
+
+.tab .tab-head ul{
+    line-height: 48px;
+    text-align: center;
+    font-size:16px;
+}
+
+.tab .tab-head li{
+    width:100px;
+    float:left;
+   cursor: pointer;
+}
+
+.tab .tab-head ul .current{
+    border-bottom: 1px solid orangered;
+    color: orangered;
+}
+
+.tab .tab-content{
+    width:100%;
+    height: 100%;
+    background-color: #e8e8e8;
+}
+
+.tab .tab-content .tab-content-in{
+    width:1244px;
+    height: 100%;
+    margin:0 auto;
+}
+
+.tab .tab-content .dom:nth-child(1){
+    width: 100%;
+}
+
+.tab .tab-content .dom:nth-child(2){
+    width: 100%;
+    background-color: green;
+    display: none;
+}
+
+.tab .tab-content .dom:nth-child(3){
+    width: 100%;
+    background-color: yellow;
+    display: none;
+}
+
+.tab .tab-content .category{
+    padding-top:15px;
+    width: 1244px;
+    margin: 0 auto;
+    height: 126px;
+}
+
+.tab .tab-content .category ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab .tab-content .category li{
+    float:left;
+    width: 236px;
+    height: 126px;
+    border-radius: 4px;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.tab .tab-content .category li:nth-child(1){
+    background:url(../images/top01.png);
+}
+
+.tab .tab-content .category li:nth-child(2) {
+    background: url(../images/top02.jpg);
+}
+
+.tab .tab-content .category li:nth-child(3) {
+    background: url(../images/top03.jpg);
+}
+
+.tab .tab-content .category li:nth-child(4) {
+    background: url(../images/top04.jpg);
+}
+
+.tab .tab-content .category li:nth-child(5) {
+    background: url(../images/top05.jpg);
+}
+
+.tab .tab-content .waterFall{
+    width:100%;
+    margin-top:40px;
+    position:relative;
+}
+
+.tab .tab-content .waterFall .pic{
+    width:234px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    font-size:12px;
+}
+
+.tab .tab-content .waterFall .pic .pic-box{
+    position: relative;
+}
+.tab .tab-content .waterFall .pic p{
+    padding:10px;
+}
+.tab .tab-content .waterFall .pic .pic-box img{
+    width:234px;
+}
+
+.tab .tab-content .waterFall .pic .pic-box .imgCover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+}
+
+.tab .tab-content .waterFall .pic .pic-box .imgCover .pic-btns{
+    position:absolute;
+    width:100%;
+    height: 40px;
+    top:10px;
+    left:0;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.tab .tab-content .waterFall .pic .pic-box .imgCover .pic-btns a{
+    display: inline-block;
+    height: 30px;
+    text-decoration: none;
+}
+
+.tab .tab-content .waterFall .pic .pic-box .imgCover .pic-btns .collet{
+    padding:0 10px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    color:#fff;
+    background-color: #E53E49;
+}
+
+.tab .tab-content .waterFall .pic .pic-box .imgCover .pic-btns .like{
+    width:30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.tab .tab-content .waterFall .pic .pic-box .imgCover .pic-btns .like span{
+    width: 14px;
+    height: 14px;
+    background: url(../images/action_icons12.png) -19px 0;
+    display: inline-block;
+}
+/*     tab选项卡样式结束     */
+
+/*     蒙版登录样式    */
+.mask{
+    width:100%;
+    height: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0 ,0 , 0,0.5);
+    display: none;
+}
+
+.mask .login{
+    width: 520px;
+    height: 420px;
+    background-color: #fff;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-260px;
+    margin-top:-210px;
+    padding:30px;
+    box-sizing: border-box;
+}
+
+.mask .login .close-button{
+    position:absolute;
+    width:18px;
+    height: 18px;
+    top:10px;
+    right: 10px;
+    background:url(../images/msg_close.png) 0 0; ;
+}
+
+.mask .login img{
+    width: 106px;
+    display: block;
+    margin: 0 auto;
+}
+
+.mask .center-box {
+    width:286px;
+    height: 300px;
+    margin: 0 auto;
+    padding-top:10px;
+}
+
+.mask .center-box  .logTitle{
+    width:100%;
+    text-align: center;
+    color: #999;
+    position: relative;
+    font-size: 18px;
+}
+
+.mask .center-box  .logTitle span:nth-child(1){
+    content: '';
+    display: block;
+    width: 50px;
+    border-top: 1px solid #999;
+    top:12px;
+    left:0;
+    position:absolute;
+}
+
+.mask .center-box  .logTitle span:nth-child(3){
+    content: '';
+    display: block;
+    width: 50px;
+    border-top: 1px solid #999;
+    top:12px;
+    right: 0;
+    position:absolute;
+}
+
+.mask .center-box .log-icons{
+    display:flex;
+    justify-content: space-between;
+    margin:20px 0;
+}
+.mask .center-box .log-icons a{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    border-radius: 50%;
+    background: url(../images/login_icons_tiny.svg);
+}
+
+.mask .center-box .log-form{
+    width:100%;
+    margin-top:20px;
+}
+
+.mask .center-box .log-form .button-box{
+    display: flex;
+    justify-content: space-between;
+}
+.mask .center-box .log-form input{
+    padding: 0 10px;
+    width:100%;
+    height: 38px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom:10px;
+    font-size:16px;
+    background-color: #FCFCFC;
+    border-shadow:inset 0 1px 2px rgba(0,0,0,0.5);
+    border:1px solid #CCC;
+}
+
+.mask .center-box .log-form .input-btn{
+    padding: 0 10px;
+    width:45%;
+    display:inline-block;
+    height: 38px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom:10px;
+    color:#FFFFFF;
+    font-size:18px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 38px;
+}
+.mask .center-box .log-form .input-btn:nth-child(2){
+    background: linear-gradient( #E53E49, #D43636);
+}
+.mask .center-box .log-form .input-btn:nth-child(1){
+    background-color:  #FCFCFC;
+    color:#000000;
+}
+
+.mask .center-box .log-icons a:nth-child(2){
+    background-position: -80px 0;
+}
+
+.mask .center-box .log-icons a:nth-child(3){
+    background-position:-160px 0;
+}
+
+.mask .center-box .log-icons a:nth-child(4){
+    background-position: -240px 0;
+}
+
+.mask .center-box .log-icons a:nth-child(5){
+    background-position: -320px 0;
+}
+
+.mask .center-box .log-href{
+    font-size:14px;
+}
+.mask .center-box .log-href a{
+    color:#9A0000;
+    text-decoration: none;
+}
+
+.mask .center-box .log-href a:hover{
+    text-decoration: underline;
+}
+/*     蒙版登录样式结束     */
+
+/*     底部按钮样式     */
+.quickTop{
+    width:40px;
+    height: 100px;
+    position: fixed;
+    bottom:40px;
+    right: 30px;
+}
+
+.quickTop a{
+    display: block;
+    border-radius: 4px;
+}
+
+.quickTop .toUp{
+    height: 36px;
+    width: 100%;
+    background:url(../images/iconsprite_btbar.png) 8px 6px no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+}
+
+.quickTop .plus{
+    height: 36px;
+    width: 100%;
+    background: url(../images/iconsprite_btbar.png) 8px -34px no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.quickTop a:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/*     底部按钮样式结束     */
+
