@@ -39,7 +39,7 @@
         var name = $("uname").value;
 
         if(pwd.length!==0 && name.length!==0){
-            jQuery.post( "http://115.159.215.229:8080/telenet/little-cute/user",
+            jQuery.post( "http://47.100.226.85:8080/little-cute/user",
                 {
                     username:name,
                     password:pwd,
@@ -72,7 +72,7 @@
         var name = $("uname").value;
 
         if(pwd.length!==0 && name.length!==0){
-            jQuery.post("http://115.159.215.229:8080/telenet/little-cute/user",
+            jQuery.post("http://47.100.226.85:8080/little-cute/user",
                 {
                     username:name,
                     password:pwd,
